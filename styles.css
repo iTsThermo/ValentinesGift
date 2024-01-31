@@ -5,8 +5,23 @@
 }
 
 #root{
-    display: flex;
+    display: grid;
     background-color: #ff5b5b;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+#root > * {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.sparkle {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
@@ -14,19 +29,18 @@
     justify-content: center;
 }
 
-#root .hpImg{
+.container .hpImg{
     height: 360px;
     width: 444px;
 }
 
-#root .text{
+.container .text{
     justify-self: center;
     font-size: 30px;
     text-align: center;
     height: 50px;
-    font-family: 'Dancing Script', cursive;
-    font-weight: bolder;
-    font-style: italic;
+    font-family: 'Press Start 2P', system-ui;
+    font-weight: bold;
 }
 
 .btn{
@@ -37,6 +51,7 @@
 }
 
 .btn .yes, .btn .no{
+    font-family: 'Sixtyfour', sans-serif;
     font-size: 15px;
     width: 125px;
     height: 35px;
@@ -44,11 +59,18 @@
     border-radius: 15px;
     background-color: #ffaaaa;
     border: transparent;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition-duration: .4s;
     transform: scale(1);
 }
 
-.yes:hover, .no:hover{
+.yes:hover{
     transform: scale(1.1);
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: white;
+}
+
+.no:hover{
+    transform: scale(1.1);
+    box-shadow: 0 12px 16px 0 rgba(255, 0, 0, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: red;
 }
