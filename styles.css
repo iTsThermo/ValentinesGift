@@ -52,11 +52,12 @@
 
 #no {
     position: absolute;
+    left: 52%;
 }
 
 .yes{
-    position: relative;
-    right: 85%;;
+    position: absolute;
+    left: 43%;
 }
 
 .btn .yes, .btn #no{
@@ -74,8 +75,8 @@
 
 .yes:hover{
     transform: scale(1.1);
-    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    color: white;
+    box-shadow: 0 12px 16px 0 rgba(255, 187, 0, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: gold;
 }
 
 #no:hover{
