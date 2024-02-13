@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #ff5b5b;
-    box-shadow: 0 0 500px #000000 inset;
+    box-shadow: 0 0 50px rgba(0,0,0,.9) inset;
     width: 100vw;
     height: 100vh;
     animation: colorOff 3s 7s forwards;
@@ -22,13 +22,34 @@
     }
     to {
         background-color: rgba(201, 64, 64, 0.966);
+        box-shadow: 0 0 200px rgba(0,0,0,1) inset;
     }
 }
 
 #food{
     -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    animation: opacityCon 1s 9s forwards;
+    position: absolute;
 }
+
+@keyframes opacityOn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#flip{
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    animation: opacityILY 1s 12s forwards;
+    opacity: 0;
+}
+
+
 
 p{
     font-family: 'Sixtyfour', sans-serif;
