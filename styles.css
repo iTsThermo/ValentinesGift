@@ -7,7 +7,7 @@
 #root{
     display: grid;
     background-color: #ff5b5b;
-    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+    box-shadow: 0 0 100px #000000 inset
 }
 
 #root > * {
